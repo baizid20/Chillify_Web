@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Codera</title>
 </head>
 <body class="bg-[#F9FAFB]">
     <!-- header section -->
-    <header class="w-10/12 mx-auto flex justify-between pt-3 pb-8 items-center border-b-2 border-teal-200">
+    <header class="w-10/12 mx-auto flex justify-between pt-4 pb-8 items-center border-b-2 border-teal-200">
        
         <div>
-           <h1 class="sm: text-3xl lg:text-5xl font-extrabold text-teal-950"> Codera</h1> 
+           <h1 class="sm: text-3xl lg:text-5xl font-extrabold text-teal-950">Codera</h1> 
         </div>
         <div>
             <button class="font-semibold sm:text-xs lg:text-sm  lg:py-3  lg:px-4 hidden lg:block
@@ -20,7 +21,7 @@
         </div>
         <div class="">
             <button class="font-semibold sm:text-xs lg:text-base  lg:py-3 lg:px-8 hidden lg:block
-            bg-teal-400 rounded-md hover:bg-teal-600"> Blog</button>
+            bg-teal-400 rounded-md text-white hover:bg-teal-600"> Blog</button>
         </div>
         <!-- menu icon -->
         <div class="lg:hidden">
@@ -33,11 +34,10 @@
 <!-- main section -->
  <main>
      <!-- navbar button  -->
-      <nav class="flex justify-center items-center py-5 gap-5">
-        <button class="btn btn-sm">Small</button>
-        <button class="btn btn-sm">Small</button>
-        <button class="btn btn-sm">Small</button>
-        <button class="btn btn-sm">Small</button>
+      <nav id="nav-container" class="lg:flex grid grid-cols-2   lg:justify-center lg:items-center lg:py-5 lg:gap-5 w-10/12 mx-auto my-5">
+        <div class="">
+            <button id="btnA" class="lg:btn font-inter flex sm:mx-2 bg-gray-200 hover:bg-teal-400 hover:text-white font-semibold text lg:rounded-md rounded-full my-2 lg:text-base text-xl px-8 py-1"> <span class="lg:hidden block">#</span>All</button>
+        </div>
       </nav>
  </main>
 <!-- footer section -->
@@ -50,7 +50,7 @@
 
 
     <!-- script  -->
-
+<script src="script.js"></script>
 </body>
 </html>
 
